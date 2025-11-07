@@ -25,6 +25,8 @@
 - **Assignment Operators**: `=`, `+=`, etc.
 - Operator Precedence
 
+[Operators](operators.md)
+
 ## 4. Strings
 
 - Creating strings
