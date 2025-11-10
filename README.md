@@ -25,7 +25,7 @@
 - **Assignment Operators**: `=`, `+=`, etc.
 - Operator Precedence
 
-[Operators](operators.md)
+[Operators](Operators.md)
 
 ## 4. Strings
 
@@ -33,6 +33,8 @@
 - Indexing & Slicing
 - String methods (`lower()`, `upper()`, `split()`, etc.)
 - f-strings for formatting
+
+[Strings](Strings.md)
 
 ## 5. Conditional Statements
 
