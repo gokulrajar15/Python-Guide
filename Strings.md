@@ -266,101 +266,90 @@ print(message)
 
 ### Example 1: Name Formatter
 ```python
-def format_name(first, last):
-    """Format a person's name properly"""
-    # Convert to title case and strip whitespace
-    first = first.strip().title()
-    last = last.strip().title()
-    return f"{first} {last}"
+# Format a person's name properly using string methods
+first_name = "  alice  "
+last_name = "  johnson  "
 
-# Test the function
-name = format_name("  alice  ", "  johnson  ")
-print(name)  # Alice Johnson
+# Clean and format the names
+first_clean = first_name.strip().title()
+last_clean = last_name.strip().title()
+full_name = first_clean + " " + last_clean
+
+print(f"Original: '{first_name}' '{last_name}'")
+print(f"Formatted: {full_name}")  # Alice Johnson
 ```
 
-### Example 2: Email Validator (Basic)
+### Example 2: Email Parts Extractor
 ```python
-def is_valid_email(email):
-    """Basic email validation"""
-    email = email.strip().lower()
-    
-    # Check if @ symbol is present and not at start/end
-    if email.count("@") != 1:
-        return False
-    
-    # Split by @ symbol
-    parts = email.split("@")
-    username, domain = parts[0], parts[1]
-    
-    # Basic checks
-    if len(username) == 0 or len(domain) == 0:
-        return False
-    
-    if "." not in domain:
-        return False
-    
-    return True
+# Extract username and domain from an email address
+email = "user@example.com"
 
-# Test the validator
-emails = ["user@example.com", "invalid.email", "user@@domain.com"]
-for email in emails:
-    print(f"{email}: {is_valid_email(email)}")
+# Clean the email
+email_clean = email.strip().lower()
+
+# Find the @ symbol position
+at_position = email_clean.find("@")
+
+# Extract parts using slicing
+username = email_clean[:at_position]
+domain = email_clean[at_position + 1:]
+
+print(f"Email: {email_clean}")
+print(f"Username: {username}")
+print(f"Domain: {domain}")
+print(f"Has @ symbol: {'@' in email_clean}")
+print(f"Ends with .com: {email_clean.endswith('.com')}")
 ```
 
 ### Example 3: Text Statistics
 ```python
-def analyze_text(text):
-    """Analyze text and return statistics"""
-    # Clean the text
-    cleaned = text.strip()
-    
-    # Calculate statistics
-    char_count = len(cleaned)
-    word_count = len(cleaned.split())
-    sentence_count = cleaned.count('.') + cleaned.count('!') + cleaned.count('?')
-    
-    # Create report
-    report = f"""
-Text Analysis Report:
-====================
-Characters: {char_count}
-Words: {word_count}
-Sentences: {sentence_count}
-Average words per sentence: {word_count/sentence_count:.1f}
-"""
-    
-    return report
-
-# Test the analyzer
+# Analyze text using string methods
 sample_text = "Hello world! This is a sample text. How are you today?"
-print(analyze_text(sample_text))
+
+# Clean the text
+cleaned_text = sample_text.strip()
+
+# Calculate basic statistics
+char_count = len(cleaned_text)
+word_list = cleaned_text.split()
+word_count = len(word_list)
+sentence_count = cleaned_text.count('.') + cleaned_text.count('!') + cleaned_text.count('?')
+
+# Display results
+print("Text Analysis Report:")
+print("====================")
+print(f"Original text: {sample_text}")
+print(f"Characters: {char_count}")
+print(f"Words: {word_count}")
+print(f"Sentences: {sentence_count}")
+print(f"First word: {word_list[0]}")
+print(f"Last word: {word_list[-1]}")
+print(f"Contains 'sample': {'sample' in cleaned_text}")
 ```
 
-### Example 4: Password Generator
+### Example 4: Text Formatter
 ```python
-import random
-import string
+# Format text using string methods
+original_text = "python string manipulation"
 
-def generate_password(length=12):
-    """Generate a random password"""
-    # Define character sets
-    lowercase = string.ascii_lowercase
-    uppercase = string.ascii_uppercase
-    digits = string.digits
-    symbols = "!@#$%^&*"
-    
-    # Combine all characters
-    all_chars = lowercase + uppercase + digits + symbols
-    
-    # Generate password
-    password = ''.join(random.choice(all_chars) for _ in range(length))
-    
-    return password
+# Different formatting examples
+uppercase_text = original_text.upper()
+title_text = original_text.title()
+capitalized_text = original_text.capitalize()
+reversed_text = original_text[::-1]
 
-# Generate passwords
-for i in range(3):
-    password = generate_password(10)
-    print(f"Password {i+1}: {password}")
+# Replace and modify
+modified_text = original_text.replace("python", "PYTHON")
+spaced_text = original_text.replace(" ", "_")
+
+# Display all formats
+print(f"Original: {original_text}")
+print(f"Uppercase: {uppercase_text}")
+print(f"Title: {title_text}")
+print(f"Capitalized: {capitalized_text}")
+print(f"Reversed: {reversed_text}")
+print(f"Modified: {modified_text}")
+print(f"Underscored: {spaced_text}")
 ```
 
 ## String Immutability
@@ -389,26 +378,21 @@ print(uppercase)  # PYTHON (new string)
 
 ### Checking String Content
 ```python
-def validate_input(text):
-    """Validate user input"""
-    if not text:
-        return "Input cannot be empty"
-    
-    if not text.strip():
-        return "Input cannot be just whitespace"
-    
-    if len(text) < 3:
-        return "Input must be at least 3 characters"
-    
-    if text.isdigit():
-        return "Input cannot be just numbers"
-    
-    return "Valid input"
+# Different ways to check string content
+user_input = "Hello123"
 
-# Test validation
-inputs = ["Hello", "  ", "Hi", "123", ""]
-for inp in inputs:
-    print(f"'{inp}': {validate_input(inp)}")
+# Basic checks
+print(f"Text: '{user_input}'")
+print(f"Length: {len(user_input)}")
+print(f"Is empty: {user_input == ''}")
+print(f"Has only spaces: {user_input.strip() == ''}")
+print(f"Is all digits: {user_input.isdigit()}")
+print(f"Is all letters: {user_input.isalpha()}")
+print(f"Is alphanumeric: {user_input.isalnum()}")
+print(f"Is lowercase: {user_input.islower()}")
+print(f"Is uppercase: {user_input.isupper()}")
+print(f"Starts with 'Hello': {user_input.startswith('Hello')}")
+print(f"Ends with '123': {user_input.endswith('123')}")
 ```
 
 ### String Comparison
@@ -433,56 +417,73 @@ print(sorted(names, key=str.lower))     # ['alice', 'Bob', 'Charlie']
 
 ### Exercise 1: Text Cleaner
 ```python
-# Create a function that cleans text by:
-# - Removing extra whitespace
-# - Converting to proper title case
-# - Removing special characters except spaces
-
-def clean_text(text):
-    # Your code here
-    pass
-
-# Test
+# Clean and format text using string methods
 messy_text = "  hello    WORLD!!!   how are YOU??  "
+
+# Your task: Use string methods to clean this text
+# Step 1: Remove extra whitespace from beginning and end
+# Step 2: Convert to proper title case
+# Step 3: Remove exclamation marks and question marks
 # Expected output: "Hello World How Are You"
+
+# Write your solution here:
+cleaned = # Your code here
+print(f"Original: '{messy_text}'")
+print(f"Cleaned: '{cleaned}'")
 ```
 
-### Exercise 2: Word Counter
+### Exercise 2: Vowel Counter
 ```python
-# Create a function that counts word frequency in a text
-def count_words(text):
-    # Your code here
-    pass
+# Count vowels in a string using string methods
+test_text = "Hello World"
+vowels = "aeiouAEIOU"
 
-# Test
-sample = "python is great and python is fun python rocks"
-# Expected output: {'python': 3, 'is': 2, 'great': 1, 'and': 1, 'fun': 1, 'rocks': 1}
+# Your task: Count how many vowels are in the text
+# Hint: Use a combination of lower() and counting
+
+# Write your solution here:
+vowel_count = # Your code here
+print(f"Text: '{test_text}'")
+print(f"Vowels found: {vowel_count}")
+# Expected output: 3 (e, o, o)
 ```
 
-### Exercise 3: Palindrome Checker
+### Exercise 3: String Reverser
 ```python
-# Check if a string is a palindrome (reads the same forwards and backwards)
-def is_palindrome(text):
-    # Your code here
-    pass
+# Reverse each word in a sentence using string methods
+test_sentence = "Hello World Python"
 
-# Test
-test_strings = ["racecar", "hello", "A man a plan a canal Panama"]
-# Expected: True, False, True (ignoring spaces and case)
+# Your task: Reverse each word but keep the word order
+# Hint: Use split(), slicing [::-1], and join()
+
+# Write your solution here:
+words = test_sentence.split()
+reversed_words = # Your code here
+result = # Your code here
+
+print(f"Original: '{test_sentence}'")
+print(f"Reversed words: '{result}'")
+# Expected output: "olleH dlroW nohtyP"
 ```
 
-### Exercise 4: String Encoder
+### Exercise 4: Text Analyzer
 ```python
-# Create a simple Caesar cipher encoder
-def encode_message(message, shift=3):
-    # Your code here
-    pass
+# Analyze text using basic string methods
+test_text = "Python is great for string manipulation"
 
-# Test
-original = "Hello World"
-encoded = encode_message(original, 3)
-print(f"Original: {original}")
-print(f"Encoded: {encoded}")
+# Your task: Extract information using string methods
+# Find: number of words, longest word, shortest word
+
+# Write your solution here:
+words = test_text.split()
+word_count = len(words)
+longest_word = # Your code here (hint: use max() with key=len)
+shortest_word = # Your code here (hint: use min() with key=len)
+
+print(f"Text: '{test_text}'")
+print(f"Word count: {word_count}")
+print(f"Longest word: '{longest_word}'")
+print(f"Shortest word: '{shortest_word}'")
 ```
 
 ## Summary
