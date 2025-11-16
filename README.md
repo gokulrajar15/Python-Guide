@@ -68,6 +68,8 @@
 - Key-value pairs
 - Adding, updating, deleting items
 
+[Data Structures](Data-Structures.md)
+
 ## 8. Functions
 
 - Defining functions
