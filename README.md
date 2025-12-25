@@ -43,6 +43,8 @@
 - `elif` statements
 - Nested conditions
 
+[Conditional Statements](Conditional-Statements.md)
+
 ## 6. Loops
 
 - `for` loop
