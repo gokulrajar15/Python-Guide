@@ -89,11 +89,15 @@
 - Built-in modules (`math`, `random`, `datetime`)
 - Installing external packages (`pip install`)
 
+[Modules & Packages](Modules-Packages.md)
+
 ## 10. File Handling
 
 - Opening files
 - Reading / writing files
 - Working with text files
+
+[File Handling](File-Handling.md)
 
 ## 11. Exception Handling
 
