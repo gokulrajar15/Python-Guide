@@ -1284,255 +1284,34 @@ file_path = os.path.join("data", "files", "input.txt")  # Works everywhere!
 
 ## 10. Practice Exercises
 
-### Exercise 1: Personal Diary
-Create a personal diary application:
+### Exercise 1: Write Your Name
+Create a file with your name:
 
 ```python
 # Your code here
-import datetime
-
-def create_diary_app():
-    """Create a personal diary application"""
-    
-    def add_entry():
-        """Add a new diary entry"""
-        # Get today's date
-        # Ask user for diary entry
-        # Save to file with date
-        pass
-    
-    def view_entries():
-        """View all diary entries"""
-        # Read all entries from file
-        # Display with dates
-        pass
-    
-    def search_entries(keyword):
-        """Search entries containing a keyword"""
-        # Search through all entries
-        # Return matching entries with dates
-        pass
-    
-    def diary_stats():
-        """Show diary statistics"""
-        # Count total entries
-        # Show date range
-        # Count words written
-        pass
-
-# Test your diary app
-create_diary_app()
-
-# Expected features:
-# - Add dated entries to diary.txt
-# - View all entries chronologically
-# - Search for specific words/phrases
-# - Show statistics about diary usage
+# Write your name to a file called "my_name.txt"
+# Then read the file and print what's inside
 ```
 
-### Exercise 2: Grade Book Manager
-Create a grade book for teachers:
+### Exercise 2: Save Numbers
+Save a list of numbers to a file:
 
 ```python
 # Your code here
+numbers = [1, 2, 3, 4, 5]
 
-def create_gradebook():
-    """Create a digital gradebook for teachers"""
-    
-    def add_student(name, student_id):
-        """Add a new student to the gradebook"""
-        pass
-    
-    def add_grade(student_id, assignment, grade):
-        """Add a grade for a student"""
-        pass
-    
-    def calculate_averages():
-        """Calculate averages for all students"""
-        pass
-    
-    def generate_report():
-        """Generate a grade report"""
-        pass
-    
-    def export_grades(filename):
-        """Export grades to CSV file"""
-        pass
-
-# Test your gradebook
-create_gradebook()
-
-# Expected features:
-# - Store student info and grades in files
-# - Calculate individual and class averages
-# - Generate formatted reports
-# - Import/export CSV data
-# - Handle multiple assignments
+# Write each number on a new line in "numbers.txt"
+# Then read the file and print each number
 ```
 
-### Exercise 3: Expense Tracker
-Create a personal expense tracking system:
+### Exercise 3: Shopping List
+Create a simple shopping list file:
 
 ```python
 # Your code here
-import datetime
-
-def create_expense_tracker():
-    """Create personal expense tracker"""
-    
-    def add_expense(amount, category, description):
-        """Add a new expense"""
-        pass
-    
-    def view_expenses(start_date=None, end_date=None):
-        """View expenses in date range"""
-        pass
-    
-    def expenses_by_category():
-        """Show expenses grouped by category"""
-        pass
-    
-    def monthly_summary(year, month):
-        """Show summary for specific month"""
-        pass
-    
-    def budget_tracker(monthly_budget):
-        """Track spending against budget"""
-        pass
-
-# Test your expense tracker
-create_expense_tracker()
-
-# Expected features:
-# - Record expenses with date, amount, category
-# - View expenses by date range or category
-# - Calculate monthly/yearly totals
-# - Budget tracking and warnings
-# - Export data for analysis
-```
-
-### Exercise 4: Simple File Backup System
-Create a file backup and synchronization tool:
-
-```python
-# Your code here
-import os
-import datetime
-
-def create_backup_system():
-    """Create file backup system"""
-    
-    def backup_file(source, destination):
-        """Backup a single file"""
-        pass
-    
-    def backup_directory(source_dir, backup_dir):
-        """Backup entire directory"""
-        pass
-    
-    def compare_files(file1, file2):
-        """Compare two files for differences"""
-        pass
-    
-    def restore_backup(backup_file, restore_location):
-        """Restore from backup"""
-        pass
-    
-    def cleanup_old_backups(backup_dir, days_to_keep):
-        """Remove old backup files"""
-        pass
-
-# Test your backup system
-create_backup_system()
-
-# Expected features:
-# - Create timestamped backups
-# - Compare files to detect changes
-# - Restore files from backups
-# - Automatic cleanup of old backups
-# - Progress reporting for large operations
-```
-
-### Exercise 5: Log File Monitor
-Create a tool to monitor and analyze log files:
-
-```python
-# Your code here
-import time
-import re
-
-def create_log_monitor():
-    """Create real-time log file monitor"""
-    
-    def watch_log_file(filename):
-        """Watch log file for new entries"""
-        pass
-    
-    def alert_on_pattern(pattern, action):
-        """Alert when specific pattern is found"""
-        pass
-    
-    def count_error_frequency():
-        """Count how often errors occur"""
-        pass
-    
-    def generate_daily_report():
-        """Generate daily log summary"""
-        pass
-    
-    def archive_old_logs(max_age_days):
-        """Archive logs older than specified days"""
-        pass
-
-# Test your log monitor
-create_log_monitor()
-
-# Expected features:
-# - Real-time log file monitoring
-# - Pattern-based alerts
-# - Error frequency analysis
-# - Automated reporting
-# - Log rotation and archiving
-```
-
-### Exercise 6: Text Processing Toolkit
-Create a comprehensive text processing tool:
-
-```python
-# Your code here
-
-def create_text_processor():
-    """Create comprehensive text processing toolkit"""
-    
-    def word_frequency_analysis(filename):
-        """Analyze word frequency in text file"""
-        pass
-    
-    def find_and_replace(filename, find_text, replace_text):
-        """Find and replace text in file"""
-        pass
-    
-    def merge_text_files(file_list, output_file):
-        """Merge multiple text files"""
-        pass
-    
-    def extract_emails(filename):
-        """Extract email addresses from text"""
-        pass
-    
-    def text_statistics(filename):
-        """Calculate comprehensive text statistics"""
-        pass
-
-# Test your text processor
-create_text_processor()
-
-# Expected features:
-# - Word frequency analysis with charts
-# - Find and replace with backup
-# - File merging with formatting
-# - Pattern extraction (emails, phones, etc.)
-# - Detailed text statistics
+# Create a shopping list with 3-4 items
+# Save it to "shopping.txt"
+# Read it back and display the items
 ```
 
 ---

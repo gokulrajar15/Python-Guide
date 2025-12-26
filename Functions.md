@@ -940,44 +940,46 @@ def create_user_account(personal_info, contact_info):
 
 ## 8. Practice Exercises
 
-### Exercise 1: Calculator Functions
-Create a calculator using separate functions for each operation:
+### Exercise 1: Simple Calculator
+Create a function that adds two numbers:
 
 ```python
 # Your code here
-def add(a, b):
+def add_numbers(a, b):
     # Return the sum of a and b
     pass
 
-def subtract(a, b):
-    # Return the difference of a and b
+# Test your function
+result = add_numbers(5, 3)
+print(f"5 + 3 = {result}")
+```
+
+### Exercise 2: Greet Function
+Create a function that greets someone:
+
+```python
+# Your code here
+def greet(name):
+    # Print a greeting with the person's name
     pass
 
-def multiply(a, b):
-    # Return the product of a and b
+# Test your function
+greet("Alice")
+```
+
+### Exercise 3: Check Even or Odd
+Create a function that checks if a number is even:
+
+```python
+# Your code here
+def is_even(number):
+    # Return True if number is even, False if odd
     pass
 
-def divide(a, b):
-    # Return the quotient of a and b
-    # Handle division by zero
-    pass
-
-def calculator_menu():
-    # Display menu and get user choice
-    pass
-
-def get_numbers():
-    # Get two numbers from user
-    pass
-
-def main_calculator():
-    # Main calculator loop
-    pass
-
-# Test your calculator
-main_calculator()
-
-# Expected features:
+# Test your function
+print(is_even(4))  # Should print True
+print(is_even(7))  # Should print False
+```
 # - Menu with options for +, -, *, /, exit
 # - Input validation
 # - Handle division by zero

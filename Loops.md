@@ -870,134 +870,30 @@ for row_index, row in enumerate(matrix):
 
 ## 9. Practice Exercises
 
-### Exercise 1: Number Analysis
-Write a program that:
-1. Asks the user for 10 numbers
-2. Counts how many are positive, negative, and zero
-3. Finds the largest and smallest numbers
-4. Calculates the average
+### Exercise 1: Count to 10
+Print numbers from 1 to 10:
 
 ```python
 # Your code here
-print("=== Number Analysis ===")
-print("Please enter 10 numbers:")
-
-numbers = []
-
-# Collect 10 numbers
-
-# Analyze the numbers
-
-# Display results
-
-# Expected output format:
-# You entered: [1, -2, 0, 5, -1, 8, 0, 3, -4, 7]
-# Positive numbers: 5
-# Negative numbers: 3  
-# Zero count: 2
-# Largest number: 8
-# Smallest number: -4
-# Average: 1.7
+# Use a for loop to print numbers 1 through 10
 ```
 
-### Exercise 2: Pattern Generator
-Create a program that generates various patterns based on user input:
+### Exercise 2: Add Numbers
+Add all numbers from 1 to 5:
 
 ```python
 # Your code here
-print("=== Pattern Generator ===")
-
-# Pattern 1: Right Triangle
-# *
-# **
-# ***
-# ****
-# *****
-
-# Pattern 2: Inverted Triangle  
-# *****
-# ****
-# ***
-# **
-# *
-
-# Pattern 3: Diamond (challenging!)
-#   *
-#  ***
-# *****
-#  ***
-#   *
-
-# Ask user which pattern they want and how many rows
+# Use a for loop to add 1 + 2 + 3 + 4 + 5
+# Print the total
 ```
 
-### Exercise 3: Word Game
-Create a word guessing game:
-1. Create a list of words
-2. Computer randomly selects one
-3. Show blanks for each letter
-4. User guesses letters one at a time
-5. Track correct and incorrect guesses
-6. End when word is guessed or too many wrong guesses
+### Exercise 3: Print Your Name
+Print your name 5 times:
 
 ```python
 # Your code here
-import random
-
-print("=== Word Guessing Game ===")
-
-words = ["python", "computer", "programming", "challenge", "learning"]
-
-# Select random word
-
-# Initialize game variables
-
-# Main game loop
-
-# Expected interaction:
-# Word: _ _ _ _ _ _
-# Guess a letter: p
-# Good guess! Word: p _ _ _ _ _
-# Guess a letter: x  
-# Wrong! Tries left: 5
-# ... continue until word is guessed or no tries left
-```
-
-### Exercise 4: Prime Number Finder
-Write a program that finds all prime numbers up to a given limit:
-
-```python
-# Your code here
-print("=== Prime Number Finder ===")
-
-# Get limit from user
-limit = int(input("Find primes up to: "))
-
-# Find all prime numbers up to the limit
-primes = []
-
-# A prime number is only divisible by 1 and itself
-# Test each number from 2 to limit
-
-# Display results
-
-# Expected output for limit = 20:
-# Prime numbers up to 20: [2, 3, 5, 7, 11, 13, 17, 19]
-# Found 8 prime numbers
-```
-
-### Exercise 5: Text Statistics
-Create a program that analyzes text input and provides statistics:
-
-```python
-# Your code here
-print("=== Text Statistics ===")
-
-text = input("Enter some text: ")
-
-# Count different things using loops:
-# - Total characters (including spaces)
-# - Total characters (excluding spaces)  
+# Use a for loop to print your name 5 times
+```  
 # - Total words
 # - Total sentences (count . ! ?)
 # - Most common letter

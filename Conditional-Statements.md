@@ -877,127 +877,38 @@ else:
 
 ## 9. Practice Exercises
 
-### Exercise 1: Number Analyzer
-Create a program that analyzes a number entered by the user. Check if the number is:
-- Positive, negative, or zero
-- Even or odd (if it's not zero)
-- Single digit, double digit, or more
+### Exercise 1: Simple Age Checker
+Check if someone can vote:
+
+```python
+# Your code here
+age = int(input("Enter your age: "))
+
+# Check if age is 18 or older
+# Print "You can vote!" or "You cannot vote yet"
+```
+
+### Exercise 2: Grade Checker
+Check if a student passed:
+
+```python
+# Your code here
+score = int(input("Enter your test score: "))
+
+# If score is 60 or above, print "You passed!"
+# Otherwise, print "You need to study more"
+```
+
+### Exercise 3: Number Checker
+Check if a number is positive, negative, or zero:
 
 ```python
 # Your code here
 number = int(input("Enter a number: "))
 
-# Check positive/negative/zero
-
-# Check even/odd (only if not zero)
-
-# Check digit count
-
-# Expected output for input 15:
-# 15 is positive
-# 15 is odd
-# 15 is a double-digit number
+# Check if the number is positive, negative, or zero
+# Print the appropriate message
 ```
-
-### Exercise 2: BMI Calculator
-Create a BMI (Body Mass Index) calculator that:
-1. Takes height (in meters) and weight (in kg) as input
-2. Calculates BMI = weight / (height * height)
-3. Categories the result:
-   - Below 18.5: Underweight
-   - 18.5 to 24.9: Normal weight
-   - 25.0 to 29.9: Overweight
-   - 30.0 and above: Obese
-
-```python
-# Your code here
-print("=== BMI Calculator ===")
-
-# Get input
-
-# Calculate BMI
-
-# Categorize and display results
-
-# Expected output for height=1.75, weight=70:
-# Your BMI is: 22.9
-# Category: Normal weight
-```
-
-### Exercise 3: Movie Ticket Pricing
-Create a movie ticket pricing system:
-- Regular ticket: $12
-- Child (under 12): $8
-- Senior (65+): $10
-- Student discount: 15% off regular price
-- Weekend surcharge: $3 extra
-
-```python
-# Your code here
-print("=== Movie Ticket Pricing ===")
-
-# Get customer information
-age = int(input("Enter your age: "))
-is_student = input("Are you a student? (yes/no): ").lower()
-is_weekend = input("Is this a weekend show? (yes/no): ").lower()
-
-# Calculate ticket price
-
-# Display results
-
-# Expected output for age=20, student=yes, weekend=yes:
-# Base ticket price: $12.00
-# Student discount (15%): -$1.80
-# Weekend surcharge: +$3.00
-# Final price: $13.20
-```
-
-### Exercise 4: Rock Paper Scissors
-Create a simple Rock Paper Scissors game:
-- Get player's choice
-- Generate computer's random choice
-- Determine winner
-- Display results
-
-```python
-# Your code here
-import random
-
-print("=== Rock Paper Scissors ===")
-
-# Get player choice
-
-# Generate computer choice (use random.choice())
-choices = ["rock", "paper", "scissors"]
-
-# Determine winner
-
-# Display results
-
-# Game rules:
-# Rock beats Scissors
-# Scissors beats Paper  
-# Paper beats Rock
-```
-
-### Exercise 5: Grade Point Average (GPA) Calculator
-Create a GPA calculator that:
-1. Takes number of courses
-2. For each course, gets credit hours and letter grade
-3. Converts letter grades to points (A=4, B=3, C=2, D=1, F=0)
-4. Calculates GPA = total points / total credit hours
-5. Displays academic standing
-
-```python
-# Your code here
-print("=== GPA Calculator ===")
-
-# Get number of courses
-
-# Initialize variables for total points and total credits
-
-# For each course:
-  # Get credit hours and letter grade
   # Convert letter grade to points
   # Add to totals
 
