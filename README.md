@@ -104,6 +104,8 @@
 - `try`, `except`, `finally`
 - Common errors (`ValueError`, `ZeroDivisionError`, etc.)
 
+[Exception Handling](Exception-Handling.md)
+
 ## 12. Object-Oriented Programming (Beginner Level)
 
 - Class & Object
