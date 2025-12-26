@@ -52,6 +52,8 @@
 - `break` & `continue`
 - Loop with `range()`
 
+[Loops](Loops.md)
+
 ## 7. Collections / Data Structures
 
 ### List
@@ -78,6 +80,8 @@
 - Parameters & return values
 - Default and keyword arguments
 - Scope of variables (local vs global)
+
+[Functions](Functions.md)
 
 ## 9. Modules & Packages
 
